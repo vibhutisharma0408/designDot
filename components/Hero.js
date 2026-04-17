@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="relative min-h-[500px] md:min-h-[700px] lg:min-h-screen overflow-hidden flex items-center pt-16">
-      {/* Background Image */}
+      {/* main banner image */}
       <div className="absolute inset-0 top-16 lg:top-0">
         <img
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80"
@@ -10,7 +10,7 @@ export default function Hero() {
         />
       </div>
 
-      {/* SVG Blue Overlay Mask */}
+      {/* blue curve */}
       <svg 
         className="absolute inset-0 w-full h-full z-10 hidden sm:block" 
         preserveAspectRatio="none" 
@@ -18,7 +18,7 @@ export default function Hero() {
       >
         <path d="M0,0 L28,0 L52,60 C60,82 75,85 100,85 L100,105 L0,105 Z" fill="#0033A0" />
       </svg>
-      {/* Mobile fallback shape without complex curve */}
+      {/* simpler version for phone */}
       <svg 
         className="absolute inset-0 w-full h-full z-10 sm:hidden" 
         preserveAspectRatio="none" 
@@ -28,7 +28,7 @@ export default function Hero() {
         <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="#0033A0" opacity="0.8" />
       </svg>
 
-      {/* Main content */}
+      {/* text box */}
       <div className="relative z-20 w-full max-w-[1400px] mx-auto px-6 lg:px-8 xl:px-12 flex flex-col justify-center min-h-[calc(100vh-64px)] pb-10">
         <div className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mt-12 md:mt-0">
           <p className="text-white/80 text-[9px] sm:text-[11px] font-bold tracking-widest uppercase mb-4">
@@ -50,7 +50,7 @@ export default function Hero() {
             href="#"
             className="relative inline-flex items-center justify-center gap-3 text-black font-black text-[13px] tracking-widest uppercase px-8 py-3.5 transition-transform hover:scale-105 group"
           >
-            {/* SVG Background for Button (trapezoid with rounded corners) */}
+            {/* styled bg */}
             <div className="absolute inset-0 z-0">
               <svg width="100%" height="100%" viewBox="0 0 200 48" preserveAspectRatio="none">
                 <path d="M6,0 L180,0 C186,0 188,2 189,6 L198,42 C199,46 197,48 191,48 L6,48 C2,48 0,46 0,42 L0,6 C0,2 2,0 6,0 Z" fill="#FF7F00" />
@@ -67,7 +67,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom elements container (Text & Badge) aligned exactly with main container limits */}
+      {/* bottom labels */}
       <div className="absolute left-0 right-0 bottom-8 md:bottom-12 lg:bottom-16 z-20 pointer-events-none">
         <div className="w-full max-w-[1400px] mx-auto px-6 lg:px-8 xl:px-12 flex flex-col md:flex-row md:items-end lg:items-center justify-between gap-6 pointer-events-auto">
           
@@ -77,7 +77,7 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* 250+ team badge bottom right */}
+          {/* team badge */}
           <div className="flex items-center gap-3 self-end md:self-auto shrink-0">
             <div className="flex -space-x-3">
               <div className="w-10 h-10 rounded-full border-2 border-[#0033A0] overflow-hidden">

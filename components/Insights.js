@@ -3,7 +3,7 @@ export default function Insights() {
     <section className="bg-white py-12 lg:py-24 px-4 md:px-8 lg:px-16 w-full max-w-[1400px] mx-auto">
       <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-10 lg:gap-14">
 
-        {/* Label card */}
+        {/* label */}
         <div className="shrink-0 flex items-center">
           <div className="bg-[#F0F2F5] rounded-[24px] w-[200px] h-[190px] flex flex-col justify-center p-8">
             <p className="text-[#1a1a1a] font-bold text-[15px] leading-[1.4] uppercase tracking-wide">
@@ -12,10 +12,10 @@ export default function Insights() {
           </div>
         </div>
 
-        {/* Insights list */}
+        {/* text items */}
         <div className="flex-1 max-w-[420px] flex flex-col justify-center gap-5">
 
-          {/* Active item */}
+          {/* first item */}
           <div className="pb-4 border-b-[2px] border-[#0033A0]">
             <h3 className="text-[#0033A0] font-bold text-[12.5px] mb-1.5">
               Pre-market Entry
@@ -54,10 +54,10 @@ export default function Insights() {
 
         </div>
 
-        {/* Right image card layout (Accordion style) */}
+        {/* image accordion */}
         <div className="shrink-0 flex items-stretch gap-4 h-[280px] lg:h-[320px] ml-auto">
           
-          {/* Expanded Image */}
+          {/* main card */}
           <div className="relative w-[180px] lg:w-[220px] rounded-[24px] overflow-hidden shadow-md shrink-0">
             <img
               src="https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?w=600&q=80"
@@ -73,7 +73,7 @@ export default function Insights() {
             </div>
           </div>
 
-          {/* Collapsed Image 1 */}
+          {/* side card 1 */}
           <div className="relative w-[50px] lg:w-[60px] rounded-[24px] overflow-hidden shadow-sm flex items-end justify-center pb-8 shrink-0">
             <img 
               src="https://images.unsplash.com/photo-1665686374006-b8f04c132bb8?w=300&q=80" 
@@ -86,7 +86,7 @@ export default function Insights() {
             </p>
           </div>
 
-          {/* Collapsed Image 2 */}
+          {/* side card 2 */}
           <div className="relative w-[50px] lg:w-[60px] rounded-[24px] overflow-hidden shadow-sm flex items-end justify-center pb-8 shrink-0">
             <img 
               src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=300&q=80" 

@@ -1,12 +1,12 @@
 export default function HotTopics() {
   return (
     <section className="bg-white py-12 w-full pt-16">
-      {/* Top light blue rule */}
+      {/* border line */}
       <div className="w-full border-t border-blue-200/60 w-full mb-12"></div>
       
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 xl:px-12 flex flex-col lg:flex-row items-start gap-8 lg:gap-14">
         
-        {/* Label */}
+        {/* header */}
         <div className="shrink-0 lg:w-[190px]">
           <div className="relative inline-flex items-center justify-center bg-transparent w-[160px] h-[46px]">
             <div className="absolute inset-0 z-0">
@@ -20,7 +20,7 @@ export default function HotTopics() {
           </div>
         </div>
 
-        {/* Topics grid */}
+        {/* topics */}
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-x-12 gap-y-12">
           {[
             "Parliament Introduces Income Tax Bill to Reshape India's Direct Tax Landscape",
